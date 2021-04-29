@@ -1,0 +1,1065 @@
+img{
+    width:100%;
+}
+@font-face{
+    font-family: Kalam;                   /*フォントの名前（自分で設定して大丈夫）*/
+    src:url("../font/Kalam-Regular.ttf"); /*フォントデータのパス*/
+  }
+@font-face{
+  font-family: beautiful;
+    src:url("../font/beautiful.ttf");
+}
+body{
+    font-family: Kalam,beautiful,"游明朝", "メイリオ", Meiryo, sans-serif;
+    color:#7e5c28;
+}
+header{
+    padding:10px 0;
+    width:100%;
+    position: fixed;
+    top:0;
+    background-color: #c0757780;
+    z-index: 55;
+}
+.menu_button{
+    margin:0;
+    margin-left: auto;
+    padding:16px;
+    position: fixed;
+    top:0;
+    right:0;
+}
+.header_logo{
+    margin:0 auto;
+    width:45px;
+    height:45px;
+}
+.line{
+    width:35px;
+    height:4px;
+    background-color:#ffff;
+    display:block;
+    margin:5px;
+    border-radius:2px;
+}
+/*menu*/
+.menu_sp{
+    width: 300px;
+    background-color: #eeded9;
+    position: fixed;
+    right: 0;
+    top:0;
+    z-index: 66;
+    overflow: hidden;
+    transform: translateX(300px);
+    transition: 0.5s;
+}
+.open{
+    transform: translateX(0);
+}
+.off_munu_button{
+    position: fixed;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+}
+.off_line01{
+    width: 35px;
+    height:4px;
+    background-color:#7e5c28;
+    display:block;
+    margin:5px;
+    border-radius:2px;
+    transform: translateY(10px) rotate(0.12turn) ;
+}
+.off_line02{
+    width: 35px;
+    height:4px;
+    background-color:#7e5c28;
+    display:block;
+    margin:5px;
+    border-radius:2px;
+    transform: rotate(-0.12turn) 
+}
+.menu_logo {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 120%;
+    font-family:"游明朝";
+}
+.menu_logo img{
+    width:45px;
+    height:45px;
+}
+.menu_sp ul{
+    width: 80%;
+    padding: 0;
+    margin: 0 auto 50px;
+    text-align: center;
+    list-style: none;
+}
+.menu_sp ul li{
+    border:1px solid #c07577;
+    padding:6px;
+    margin: 10px auto;
+    font-size: 120%;
+}
+.menu_sp ul li div{
+    background-color: #c07577;
+    color:#ffff;
+    font-family:"游明朝";
+    padding:15px;
+}
+/*main*/
+
+/*firstveiw*/
+
+.firstview{
+    height:100vh;
+    background:url('../img/fristview.png') no-repeat ;
+    background-size: cover;
+    background-position: 70%;
+    position:relative;
+    color:#c07577;
+    animation-name: opacity;
+    animation-duration:1s;
+}
+h1{
+    margin:0;
+    padding:135px 0 0;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform:uppercase;
+    animation-delay:1s;
+    animation-name: move;
+    opacity: 0;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    transform: translateX(-200);
+}
+/*animation*/
+@keyframes 
+opacity {
+    from {
+      opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+  }
+@keyframes 
+move{
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+         opacity: 100;
+      }
+
+  }
+  #menu_tokusyoku,#menu_greeting,#menu_saerch,#menu_contact{
+      opacity: 0;
+      transform: translateX(-200px);
+  }
+  #show{
+      transform: translateX(0);
+      opacity: 100;
+      transition: 1s;
+  }
+.pfirstView{
+    padding: 20px;
+    margin-top:30px;
+    writing-mode: vertical-rl;
+    font-size: 150%;
+    font-weight: 500;
+    animation-name: opacity;
+    animation-delay:2s;
+    opacity: 0;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+.firstView p{
+    margin:5px;
+}
+.srcoll{
+    font-size: 95%;
+    text-align: center;
+    margin:0 auto 0;
+    padding-left: 5px;
+    border-left: 1px solid #ffff;
+    color:#ffff;
+    position:absolute;
+    bottom:0;
+    left:50%;
+}
+article{
+    margin:100px 0;
+}
+
+h2{
+    margin-bottom:5px;
+    text-transform:uppercase;
+    color:#c07577;
+    font-size: 200%;
+    
+}
+.midasi{
+    width:65%;
+    margin:50px auto;
+    text-align: center;
+}
+.midasi p{
+    margin-top: 5px;
+}
+.underline{
+    background:url('../img/underline.png') no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height:10px;
+}
+.tokusyoku_01{
+    width:70%;
+    height:70px;
+    padding:20px 20px;
+    margin:0 auto 0 50px;
+    font-family: "游明朝";
+    font-size: 95%;
+    border-radius: 3px;
+    color:#ffff;
+    background:url('../img/tokusyoku01_bg.png') no-repeat;
+    background-size: 100%;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+.tokusyoku_01_ani{
+    transform: translateY(0);
+    opacity:100;
+    transition: 1s;
+}
+.tokusyoku_01 p{
+    margin:0;
+    line-height: 1.8em;
+}
+.tokusyoku_02{
+    height:245px;
+    background:url('../img/tokusyoku02_bg.png') no-repeat;
+    background-size: 65%;
+    background-position: 85%;
+}
+
+.tokusyoku_letter{
+    width:80%;
+    padding:5px;
+    margin:10px auto 20px auto;
+    border:1px solid #7e5c28;
+    color:#7e5c28;
+    background-color: #ffff;
+    z-index: 10;
+    color: #FFFF;
+}
+.tokusyoku_letter p{
+    
+    margin:0;
+    padding: 5px 0;
+    border-bottom: 1px dashed #7e5c28;
+    font-size: 135%;
+    letter-spacing: -5px;
+}
+.letter_ani{
+    color: #7e5c28;
+    transition: 1.5s;
+}
+.swiper-container{
+    margin: 50px 0;
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+    display: none;  
+}
+.swiper-container .swiper-button-next, .swiper-container .swiper-button-prev{
+    width: 45px;
+    height: 45px;
+}
+.swiper-slide{
+    
+}
+.swiper-slide p{
+    width: fit-content;
+    padding: 10px 30px;
+    color: #ffff;
+    background-color: #c07577;
+    margin: 10px auto;
+    font-family: "游明朝";
+}
+.somurie_img{
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider{
+    margin: 50px 0;
+    width: 100%;
+    overflow: hidden;
+}
+h3{
+    width:fit-content;
+    padding:  0  5px  5px 35px;
+    border-bottom: 2px solid #c07577;
+    font-family: "游明朝";
+    color:#c07577;
+    font-size: 120%;
+}
+h3::before{
+    content: url(../img/icon.png);
+    padding:10px;
+}
+.somurie02,.somurie03,.somurie04,.somurie05,.somurie06{
+    display: none;
+}
+.somurie{
+   height: 580px;
+   padding: 20px 0;
+}
+.somurie_name{
+    margin:20px;
+    display:flex;
+}
+.somurie_name img{
+    width:70%;
+}
+.somurie_text{
+    margin-top: 50px;
+    margin-left: -45px;
+    text-align: center;
+    font-family: "游明朝";
+    background:#ffffff60;
+}
+figcaption{
+    font-size: 120%;
+}
+.en_name{
+    margin-top:0;
+    font-size: 70%;
+}
+.somurie_syohin{
+    position:relative;
+    top:-100px;
+}
+.somurie_syohin figcaption{
+    width:90%;
+    padding:5px;
+    border-radius: 2px;
+    background:#c07577;
+    color:#ffff;
+    font-weight: 500;
+    text-align: center;
+    transform: rotate(-0.020turn);
+    position:absolute;
+    top:0;
+    left:-20px;
+}
+.somurie_syohin p{
+    font-family: "游明朝";
+    font-weight: 600;
+    border-bottom: 2px solid #c07577;
+    padding-bottom: 5px;
+}
+
+.line01{
+    width:25px;
+    margin:0;
+}
+.line02{
+    width:25px;
+    margin:0;
+    transform: rotate(0.25turn) translate(-5px, 0);
+}
+.somurie_ichiran {
+    height:220px;
+    background-position: top;
+    background-size: 250%;
+}
+.left{
+    width:45px;
+    position:absolute;
+    left:0;
+}
+.right{
+    width:45px;
+    position:absolute;
+    right:0;
+}
+.ichiran_button{
+    position:relative;
+    top:-155px;
+}
+.somurie_last{
+    padding:10px 30px;
+    margin:20px;
+    border:1px solid #c07577;
+    font-family: "游明朝";
+    color:#c07577;
+    line-height: 2em;
+    text-align: center;
+    font-weight: 500px;
+}
+.greeting{
+    font-size: 120%;
+    text-align: center;
+}
+.greeting_image{
+    margin:20px;
+}
+.greeting_title{
+    width:280px;
+    margin:10px auto;
+    border-bottom:3px solid #c07577b2;
+    font-weight: 600;
+}
+.greeting_text{
+    margin:20px;
+}
+.greeting_text p{
+    margin:0;
+    padding: 5px 0;
+    border-bottom: 1px dashed #7e5c28;
+}
+.greeting_matome{
+    margin:50px auto;
+    font-family: "游明朝";
+    color:#c07577;
+    font-weight: 500;
+}
+.graphic{
+    position: relative; 
+    text-align: center;
+    margin:20px 20px 100px 20px;
+}
+.pic{
+    height: 100%;
+    position: relative; 
+}
+.kotoba,.gift{
+    color: #FFFF;
+    padding-top: 10px;
+    width: 80px;
+    background-color: #c07577;
+    position: absolute;
+    bottom: 0;
+}
+
+.kotoba{
+    height: 0%;
+    right: 70%;
+}
+.gift{
+    height: 0%;
+    right: 10%;
+}
+.kotoba_ani{
+    transition: 1s;
+    height: 100%;
+}
+.gift_ani{
+    transition: 1s;
+    height: 50%;
+}
+.text{
+    position: relative; 
+    bottom: -50px;
+}
+.kotoba_p{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 63%;
+}
+.gift_p{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+}
+.num{
+    color: #59779b;
+    position: absolute;
+    left: 40%;
+    top: -10px;
+    padding: 67px 10px;
+    display: none;
+}
+.big{
+    font-size: 200%;
+
+}
+.big_ani{
+    animation-name: big;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+@keyframes 
+big {
+    0% {
+
+      font-size: 200%;
+    }
+    50% {
+
+        font-size: 300%;
+    }
+    100%{
+
+        font-size: 200%;
+    }
+  }
+
+.greeting_last{
+    width:fit-content;
+    margin:10px auto;
+    padding:10px 25px;
+    font-family: "游明朝";
+    text-align: center;
+    background:url("../img/greeting.png") no-repeat;
+    background-size: 100%;
+    position:relative;
+    left:-30px;
+}
+.greeting_last p{
+    margin:12px auto;
+}
+.greetingcard{
+    width:fit-content;
+    color:#59779b;
+    font-weight: 600;
+    border-bottom: 3px solid #c07577;
+}
+.greeting_last img{
+    width:85px;
+    position:absolute;
+    right:-60px;
+    top:-15px;
+}
+.use{
+    margin:20px;
+    padding:0;
+    list-style: none;
+}
+.use li{
+    margin:10px auto;
+    padding:10px 20px;
+    border:1px solid #c07577;
+    position:relative;
+    border-radius: 2px;
+}
+.use .step{
+    color:#c07577;
+    font-family: "Kalam";
+    width:fit-content;
+    padding:5px 10px;
+    margin:0;
+    position:absolute;
+    top:-15px;
+    background:#ffff;
+    font-size: 110%;
+}
+.use p{
+    font-family: "游明朝";
+    margin:10px auto 0;
+    text-align: center;
+}
+.triangle{
+    width:25px;
+    height:25px;
+    margin:0 auto;
+}
+.step_context{
+    display: flex;
+}
+.plus{
+    width:25px;
+    height:25px;
+    margin: 5px;
+}
+.plus01,.plus02{
+    width:20px;
+    height:2px;
+    background-color:#c07577;
+    display:block;
+    margin:5px;
+    border-radius:2px;
+}
+.plus02{
+    transform: rotate(0.25turn) translate(-6px, 0);
+}
+.step_img{
+    display: none;
+}
+.ibento{
+    margin:10px 20px 0;
+    padding:10px;
+    background:#c07577;
+    color:#FFFF;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 500;
+    font-family: "游明朝";
+    border-radius: 2px;
+    position: relative;
+}
+.ibento p{
+    width:fit-content;
+    margin:0 auto;
+    
+}
+.ibento p::after{
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/ibento_button.png");
+    background-size: contain;
+    vertical-align: middle;
+    position: absolute; 
+    right: 10px;  
+    top: 5px;
+}
+.list_ibento{
+    display: none;
+    list-style: none;
+    background-color: #eeded9;;
+    padding: 10px;
+    margin: 0 20px;
+    border-top: 1px solid #ffff;
+}
+.list_ibento li{
+    font-family: "游明朝";
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px dashed #7e5c28;
+    font-size: 150%;
+    text-align: center;
+}
+.list_ibento li p{
+    margin: 0;
+}
+.list_ibento li p::before{
+    content: url(../img/icon.png);
+    margin-right: 20px;
+}
+.Xmas,.mother,.father,.marry,.Valentine,.rei,.home{
+    display: none;
+}
+
+.reibun{
+    padding:20px;
+    background:#FFFF;
+}
+.reibun_bg{
+    padding:10px;
+    margin:20px;
+    background:#c07577;
+}
+.reibun p{
+    font-size: 130%;
+    border-bottom: 1px dashed #7e5c28;
+    letter-spacing: -3px;
+}
+.search{
+    background:url('../img/search_bg.png') no-repeat;
+    background-size:contain;
+    background-position: center;
+    margin:10px;
+    padding:10px 0;
+}
+.search img{
+    width:100px;
+}
+.search p{
+    font-size: 120%;
+    letter-spacing: -3px;
+}
+.talk_tittle{
+    margin:25px auto;
+    width:fit-content;
+    font-size: 150%;
+    border-bottom: 3px solid #c07577;
+}
+.talk02,.talk01{
+    width:fit-content;
+    margin:30px auto
+}
+.talk02 img,.talk01 img{
+    margin-top: 30px;
+}
+.talk01 p{
+    float:right;
+    margin:0;
+}
+.talk02 p{
+    float:left;
+    margin:0;
+}
+.search_context{
+    text-align: center;
+    font-family: "游明朝";
+}
+.search_context p{
+    margin:30px auto;
+}
+.search_context_tittle{
+    font-size: 120%;
+    font-weight: 600;
+}
+.search_button{
+    font-size: 150%;
+    width:fit-content;
+    margin:10px auto;
+    padding:15px 0 15px 0;
+    background:#59779b;
+    color:#FFFF;
+}
+.search_button a{
+    color:#FFFF;
+    text-decoration: none;
+    padding: 15px 30px 15px 80px;
+}
+.search_button a::after{
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 15px;
+    background: url("../img/button.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+.ask {
+    width:300px;
+    margin:0 auto;
+}
+.ask p{
+    font-family: "游明朝";
+    margin:5px 0;
+}
+.ask input{
+    margin:5px 0;
+}
+.ask_content{
+    width:300px;
+    height:150px
+}
+.submit{
+    float:right;
+    margin:0 auto;
+}
+footer{
+    padding:20px 0;
+    background:#ffefea;
+}
+.footer_logo{
+    width:50px;
+    margin:0 auto;
+}
+.footer_logo img{
+    width:50px;
+}
+footer p{
+    width:fit-content;
+    margin:10px auto;
+    font-family: "游明朝";
+    font-weight: 600;
+}
+.soical{
+    padding:0;
+    display:flex;
+    margin:0 auto;
+    list-style: none;
+    justify-content: center;
+}
+.soical li{
+    margin:10px;
+}
+.soical img{
+    width:35px;
+}
+small{
+    display:block;
+    text-align: center;
+    font-family: "游明朝";
+}
+.top{
+    padding:10px;
+    float:right;
+    font-family: "游明朝";
+    writing-mode: vertical-rl;
+    
+}
+.top::before{
+    content:url(../img/top.png);
+    padding-bottom: 10px;
+}
+@media screen and (max-width: 767px){
+    .sliderpc,.swiper-containerpc{
+        display: none;
+    }
+    .greeting_matome{
+        text-align: center;
+    }
+    .pcstep_img,.list_ibentopc{
+        display: none;
+    }
+
+}
+@media screen and (min-width: 768px){
+    body{
+        font-size: 130%;
+    }
+    .pfirstView{
+        background-position: 80%;
+        writing-mode:horizontal-tb;
+        width: fit-content;
+        position: absolute;
+        left: 25%;
+        margin: 345px 0;
+        font-weight:bold;
+        font-size: 130%;
+    }
+    h1{
+        padding: 0;
+        margin: 245px 0;
+        position: absolute;
+        left: 25%;
+        font-size: 180%;
+        
+    }
+    header{
+        display: none;
+    }
+    .menu_sp{
+        transform: translateX(0);
+        background-color: rgba(255, 255, 255, 0.384);
+        width:100%;
+    }
+    .off_munu_button{
+        display: none;
+    }
+    .menu_logo p{
+        display:none;
+    }
+    .menu_sp ul{
+        width: auto;
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px ;
+    }
+    .menu_sp ul li{
+        margin: 0 ;
+        cursor: pointer;
+    }
+    .menu_logo{
+        float: left;
+        margin: 15px 15px 15px 30px;
+        cursor: pointer;
+    }
+    .srcoll{
+        display: none;
+    }
+    .underline{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .distinction{
+        position: relative;
+    }
+    .tokusyoku_01{
+        background: #c07577;
+        width: 70px;
+        background-size: 60%;
+        height: 350px;
+        float: right;
+        writing-mode:vertical-rl;
+        position: absolute;
+        left: 60%;
+        top: 30%;
+    }
+    .tokusyoku_02{
+      background-size: contain;
+      height: 400px;
+      background-position: 70%;  
+    }
+    
+    .tokusyoku_letter{
+        width: 550px;
+        padding: 50px 30px;
+    }
+    .slider{
+        display: none;
+    }
+    .sliderpc{
+        height: 250px;
+        margin: 120px 0 120px 0;
+    }
+    .sliderpc img{
+        height: 250px;
+    }
+    .somurie{
+        width: 500px;
+        height: auto;
+        margin: 0 auto;
+    }
+    h3{
+        margin-left: 250px;
+    }
+    .swiper-container{
+        display:none;
+    }
+    .swiper-containerpc{
+        float: right;
+        height: 800px;
+        width: 300px;
+        overflow: hidden;
+        margin-right: 100px;
+    }
+    .somurie_last{
+        width: 500px;
+        margin: 20px auto;
+    }
+    .greeting{
+        display: flex;
+        margin: 30px 250px;
+    }
+    .greeting_image{
+     width: 50%;
+    }
+    .greeting_title{
+        margin: 10px 0;
+        width: auto;
+    }
+    .greetinig_content{
+        
+        margin: 30px auto;
+    }
+    .greeting_text{
+        letter-spacing: -5px;
+    }
+    .greeting_matome{
+        text-align: center;
+
+    }
+    .graphic{
+        width: 50%;
+    }
+    .greeting01{
+        display: flex;
+        margin: 30px 250px;
+
+    }
+    .greeting_last{
+        width: fit-content;
+        height: fit-content;
+        margin:150px auto;
+        background: none;
+        border: 1px solid #c07577;
+        padding: 30px 40px;
+    }
+    .greeting_last img {
+        width: 50%;
+        position: absolute;
+        right: -140px;
+        top: -70px
+    }
+    .use{
+        width: 30%;
+        margin: 20px 250px;
+    }
+    .step_img {
+        display: none !important;
+    }
+    .note{
+        font-size: 200%;
+        width: fit-content;
+        margin: 200px auto;
+    }
+    .pcstep_img {
+        position: relative;
+        width: 700px;
+        float: right;
+        margin-right: 120px;
+        height: 600px;
+        
+    }
+    .pcstep_img img{
+        margin: 70px auto;
+        max-height: 600px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        display: none;
+    }
+    .ibento{
+        display: none;
+    }
+    .reibun_bg{
+        width: 500px;
+    }
+    .reibun{
+        width: 450px;
+        margin: 0 auto;
+    }
+    .list_ibentopc{
+        list-style: none;
+        background-color: #eeded9;;
+        padding: 10px;
+        margin:20px;
+        border-top: 1px solid #ffff;
+    }
+    .list_ibentopc li{
+        font-family: "游明朝";
+        background-color: #ffffff;
+        padding: 10px;
+        border-bottom: 1px dashed #7e5c28;
+        font-size: 150%;
+        text-align: center;
+    }
+    .list_ibentopc li p{
+        margin: 0;
+    }
+    .list_ibentopc li p::before{
+        content: url(../img/icon.png);
+        margin-right: 20px;
+    }
+    .pcibento{
+        width: 1070px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    .list_ibentopc{
+        display: block !important;
+        height: 450px;
+    }
+    #color{
+        background-color: #59779b;
+        color: #FFFF;
+    }
+    .search{
+        width: 1070px;
+        height: 600px;
+        margin: auto;
+    }
+    .search img {
+        width: 180px
+    }
+    .top{
+        padding: 0;
+        margin: 0;
+    }
+    .swiper-wrapper,.use li,.list_ibentopc li,.top,.footer_logo{
+        cursor: pointer;
+    }
+    
+}

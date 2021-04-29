@@ -1,0 +1,217 @@
+@font-face{
+    font-family: Kalam;                   /*フォントの名前（自分で設定して大丈夫）*/
+    src:url("../font/Kalam-Regular.ttf"); /*フォントデータのパス*/
+  }
+@font-face{
+  font-family: beautiful;
+    src:url("../font/beautiful.ttf");
+}
+body{
+    font-family: Kalam,beautiful,"游明朝", "メイリオ", Meiryo, sans-serif;
+    color:#7e5c28;
+
+}
+h1{
+    font-size: 160%;
+    text-align: center;
+    letter-spacing: -3px;
+}
+.ibento{
+    margin:10px 20px 0;
+    padding:10px;
+    background:#c07577;
+    color:#FFFF;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 500;
+    font-family: "游明朝";
+    border-radius: 2px;
+    position: relative;
+}
+.ibento p{
+    width:fit-content;
+    margin:0 auto;
+    
+}
+.ibento p::after{
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/ibento_button.png");
+    background-size: contain;
+    vertical-align: middle;
+    position: absolute; 
+    right: 10px;  
+    top: 5px;
+}
+h2{
+    font-size: 130%;
+    letter-spacing: -3px;
+}
+
+.Q1,.Q2,.Q3,.Q4,.Q5{
+    display: none;
+    width: 335px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.slider{
+    margin-top: 130px;
+}
+.Q1ans,.Q2ans,.Q3ans,.Q4ans{
+    font-family:"游明朝";
+    display: flex;
+    justify-content:center;
+    margin: 20px;
+}
+.yes,.no{
+    padding: 10px 20px;
+    border: 1px solid #c07577;;
+    color: #c07577;
+    margin: 0 20px;
+    border-radius: 2px;
+    min-width: 100px;
+    text-align: center;
+    background-color: #FFFF;
+}
+
+.back{
+    border: 1px solid #c07577;
+    padding: 10px 0;
+    width: fit-content;
+    border-radius: 2px;
+    margin: 10px;
+}
+.back a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color:#c07577;
+    font-family:"游明朝";
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+    display: none;  
+}
+.swiper-button-next img, .swiper-button-prev img{
+    width: 45px !important;
+    height: 45px !important;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+    background: #c07577;
+}
+.swiper-scrollbar-drag{
+    background: #c07577 !important;
+}
+.swiper-container{
+ height: 300px;
+}
+.swiper-slide img{
+    width: 250px;
+    text-align: center;
+    margin: 0 auto ;
+}
+.slide-img{
+    margin: 0 auto;
+    width: 250px;
+}
+.content{
+    background-color: #eeded9;
+    padding: 10px 20px;
+    margin: 10px 0;
+    position: relative;
+}
+.num{
+    text-align: center;
+    padding: 10px;
+}
+.list_ibento{
+    display: none;
+    list-style: none;
+    background-color: #eeded9;
+    padding: 10px;
+    margin: 0 20px;
+    border-top: 1px solid #ffff;
+}
+.list_ibento li{
+    font-family: "游明朝";
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px dashed #7e5c28;
+    font-size: 150%;
+    text-align: center;
+}
+.list_ibento li p{
+    margin: 0;
+}
+.list_ibento li p::before{
+    content: url(../img/icon.png);
+    margin-right: 20px;
+}
+.birthday p,.Q5 p{
+    font-size: 200%;
+    letter-spacing: -5px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+footer{
+    padding:20px 0;
+    background:#ffefea;
+}
+.footer_logo{
+    width:50px;
+    margin:0 auto;
+}
+.footer_logo img{
+    width:50px;
+}
+footer p{
+    width:fit-content;
+    margin:10px auto;
+    font-family: "游明朝";
+    font-weight: 600;
+}
+.soical{
+    padding:0;
+    display:flex;
+    margin:0 auto;
+    list-style: none;
+    justify-content: center;
+}
+.soical li{
+    margin:10px;
+}
+.soical img{
+    width:35px;
+}
+small{
+    display:block;
+    text-align: center;
+    font-family: "游明朝";
+}
+.top{
+    padding:10px;
+    float:right;
+    font-family: "游明朝";
+    writing-mode: vertical-rl;
+    
+}
+.top::before{
+    content:url(../img/top.png);
+    padding-bottom: 10px;
+}
+@media screen and (min-width: 768px){
+    .pcwidth{
+        margin: 0 500px;
+    }
+    .Q1, .Q2, .Q3, .Q4{
+        width: 90%;
+    }
+    footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+}
